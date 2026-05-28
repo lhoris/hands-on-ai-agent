@@ -1,0 +1,60 @@
+import { mockLlm } from './mock-llm.js';
+import { ANTHROPIC_API_KEY, ANTHROPIC_MODEL } from './config.js';
+
+const ANTHROPIC_API_URL = 'https://api.anthropic.com/v1/messages';
+const ANTHROPIC_VERSION = '2023-06-01';
+
+export function getLlmMode() {
+  return getApiKey() ? 'Anthropic API' : 'mock LLM';
+}
+
+export async function callLlm(prompt) {
+  if (!getApiKey()) {
+    return mockLlm(prompt);
+  }
+
+  return callAnthropic(prompt);
+}
+
+async function callAnthropic(prompt) {
+  const apiKey = getApiKey();
+
+  const response = await fetch(ANTHROPIC_API_URL, {
+    method: 'POST',
+    headers: {
+      'content-type': 'application/json',
+      'x-api-key': apiKey,
+      'anthropic-version': ANTHROPIC_VERSION
+    },
+    body: JSON.stringify({
+      model: getModel(),
+      max_tokens: 512,
+      messages: [
+        {
+          role: 'user',
+          content: prompt
+        }
+      ]
+    })
+  });
+
+  const data = await response.json();
+
+  if (!response.ok) {
+    const message = data?.error?.message || `Anthropic API request failed with ${response.status}`;
+    throw new Error(message);
+  }
+
+  return data.content
+    .filter((part) => part.type === 'text')
+    .map((part) => part.text)
+    .join('\n');
+}
+
+function getApiKey() {
+  return ANTHROPIC_API_KEY || process.env.ANTHROPIC_API_KEY;
+}
+
+function getModel() {
+  return process.env.ANTHROPIC_MODEL || ANTHROPIC_MODEL;
+}
