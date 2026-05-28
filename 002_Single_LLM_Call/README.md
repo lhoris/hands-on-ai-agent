@@ -13,6 +13,8 @@ npm install
 npm start
 ```
 
+![test-screen](./img/test.png)
+
 실행 후 터미널에 요청을 입력하고 `Enter`를 누르면 LLM 응답이 출력됩니다. API 키가 없으면 mock LLM 응답이 출력됩니다. 종료는 `Ctrl+C`를 사용합니다.
 
 ## 실제 API 호출

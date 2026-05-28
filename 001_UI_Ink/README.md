@@ -13,6 +13,8 @@ npm install
 npm start
 ```
 
+![test-screen](./img/test.png)
+
 실행 후 터미널에 작업 내용을 입력하고 `Enter`를 누르면 simulated agent loop가 실행됩니다. 종료는 `Ctrl+C`를 사용합니다.
 
 ## 프로젝트 구조
