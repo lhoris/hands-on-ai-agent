@@ -1,0 +1,13 @@
+Step: answer
+
+Write the final answer using the user request, analysis, and plan.
+Be clear, concise, and practical.
+
+User request:
+{{userInput}}
+
+Analysis:
+{{analysis}}
+
+Plan:
+{{plan}}

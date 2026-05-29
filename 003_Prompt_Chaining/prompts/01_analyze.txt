@@ -1,0 +1,7 @@
+Step: analyze
+
+You are analyzing a user request before answering.
+Identify what the user wants and what kind of response would be useful.
+
+User request:
+{{userInput}}

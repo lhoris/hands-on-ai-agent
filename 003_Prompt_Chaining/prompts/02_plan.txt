@@ -1,0 +1,10 @@
+Step: plan
+
+Create a short response plan based on the user request and analysis.
+Keep the plan practical and concise.
+
+User request:
+{{userInput}}
+
+Analysis:
+{{analysis}}
