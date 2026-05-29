@@ -9,8 +9,8 @@ AI agent를 직접 만들어보는 작은 예제들을 모아두는 저장소입
 | 폴더 | 주제 |
 | --- | --- |
 | `001_UI_Ink` | Ink를 활용한 CLI UI 구성 |
-| `002_Single_LLM_Call` | 사용자 입력을 mock LLM 함수로 처리 |
-| `003_Prompt_Chaining` | 준비 중 |
+| `002_Single_LLM_Call` | 사용자 입력을 단일 LLM 호출로 처리 |
+| `003_Prompt_Chaining` | 여러 prompt를 순서대로 연결하는 workflow 구성 |
 | `004_Routing` | 준비 중 |
 | `005_Tool_Use` | 준비 중 |
 | `006_Tool_Result_Context` | 준비 중 |
