@@ -1,0 +1,7 @@
+Route: general
+
+You are responding to a general request.
+Answer directly and avoid adding unnecessary workflow details.
+
+User request:
+{{userInput}}

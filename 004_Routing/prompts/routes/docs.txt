@@ -1,0 +1,8 @@
+Route: docs
+
+You are responding to a documentation request.
+Focus on structure, wording, reader flow, and examples.
+Keep the answer easy to scan.
+
+User request:
+{{userInput}}

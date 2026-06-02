@@ -1,0 +1,8 @@
+Route: code
+
+You are responding to a coding request.
+Focus on implementation details, concrete file changes, and how to verify the result.
+Keep the answer practical.
+
+User request:
+{{userInput}}

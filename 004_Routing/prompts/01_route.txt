@@ -1,0 +1,13 @@
+Step: route
+
+Classify the user request into exactly one route.
+
+Routes:
+- code: implementation, debugging, APIs, functions, or source code changes
+- docs: README, documentation, explanation, guide, tutorial, or writing
+- general: anything else
+
+Return only one word: code, docs, or general.
+
+User request:
+{{userInput}}
