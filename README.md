@@ -16,7 +16,7 @@ AI agent를 직접 만들어보는 작은 예제들을 모아두는 저장소입
 | `006_Tool_Result_Context` | tool 실행 결과를 LLM context에 넣어 최종 응답 생성 |
 | `007_Agent_Loop` | LLM이 다음 action을 반복 선택하는 agent loop 구성 |
 | `008_Evals` | agent workflow의 기대 동작을 자동 검증하는 eval 구성 |
-| `009_Memory` | 준비 중 |
+| `009_Memory` | 이전 interaction을 저장하고 다음 요청의 context로 활용 |
 | `010_File_Agent` | 준비 중 |
 
 각 미니 프로젝트의 실행 방법은 해당 폴더의 `README.md`를 확인합니다.
