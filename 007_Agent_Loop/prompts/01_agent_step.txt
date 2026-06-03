@@ -1,0 +1,38 @@
+Step: agent_loop
+
+You are running one step of an agent loop.
+Choose exactly one action:
+
+1. Use a tool
+2. Provide the final answer
+
+Available tools:
+{{tools}}
+
+Scratchpad:
+{{scratchpad}}
+
+Return only JSON.
+
+If you need a tool, use this shape:
+{
+  "type": "tool",
+  "toolName": "one of the available tool names",
+  "input": "input to pass to the tool",
+  "reason": "short reason"
+}
+
+If you can answer now, use this shape:
+{
+  "type": "final",
+  "answer": "final answer to the user",
+  "reason": "short reason"
+}
+
+Rules:
+- Use a tool only when it helps answer the user request.
+- If the scratchpad already contains the needed observation, return final.
+- Do not include markdown.
+
+User request:
+{{userInput}}

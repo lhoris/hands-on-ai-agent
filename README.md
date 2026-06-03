@@ -14,7 +14,7 @@ AI agent를 직접 만들어보는 작은 예제들을 모아두는 저장소입
 | `004_Routing` | 입력 유형에 따라 다른 prompt로 분기하는 workflow 구성 |
 | `005_Tool_Use` | LLM이 선택한 tool을 코드에서 실행하는 workflow 구성 |
 | `006_Tool_Result_Context` | tool 실행 결과를 LLM context에 넣어 최종 응답 생성 |
-| `007_Agent_Loop` | 준비 중 |
+| `007_Agent_Loop` | LLM이 다음 action을 반복 선택하는 agent loop 구성 |
 | `008_Evals` | 준비 중 |
 | `009_Memory` | 준비 중 |
 | `010_File_Agent` | 준비 중 |
