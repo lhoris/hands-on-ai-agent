@@ -1,0 +1,13 @@
+{
+  "name": "evals",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node eval-runner.js",
+    "eval": "node eval-runner.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
