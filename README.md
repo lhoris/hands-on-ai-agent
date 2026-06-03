@@ -12,7 +12,7 @@ AI agent를 직접 만들어보는 작은 예제들을 모아두는 저장소입
 | `002_Single_LLM_Call` | 사용자 입력을 단일 LLM 호출로 처리 |
 | `003_Prompt_Chaining` | 여러 prompt를 순서대로 연결하는 workflow 구성 |
 | `004_Routing` | 입력 유형에 따라 다른 prompt로 분기하는 workflow 구성 |
-| `005_Tool_Use` | 준비 중 |
+| `005_Tool_Use` | LLM이 선택한 tool을 코드에서 실행하는 workflow 구성 |
 | `006_Tool_Result_Context` | 준비 중 |
 | `007_Agent_Loop` | 준비 중 |
 | `008_Evals` | 준비 중 |

@@ -1,0 +1,21 @@
+Step: select_tool
+
+You are selecting a tool for the user request.
+
+Available tools:
+{{tools}}
+
+Return only JSON in this shape:
+{
+  "toolName": "one of the available tool names",
+  "input": "input to pass to the tool",
+  "reason": "short reason for choosing this tool"
+}
+
+Rules:
+- Choose no_tool if no available tool is useful.
+- Do not execute the tool yourself.
+- Do not include markdown.
+
+User request:
+{{userInput}}
