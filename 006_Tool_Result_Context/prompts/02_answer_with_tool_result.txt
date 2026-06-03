@@ -1,0 +1,21 @@
+Step: answer_with_tool_result
+
+You are writing the final answer for the user.
+Use the tool result as context.
+Do not pretend you executed the tool yourself; explain that the tool result was used.
+Keep the answer concise and practical.
+
+User request:
+{{userInput}}
+
+Tool name:
+{{toolName}}
+
+Tool input:
+{{toolInput}}
+
+Tool reason:
+{{toolReason}}
+
+Tool result:
+{{toolResult}}
